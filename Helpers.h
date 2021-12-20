@@ -7,3 +7,6 @@ int ConvertBinToDec(long long binary);
 int GetDigitAfterDelim(const std::string &line, char delim);
 std::vector<int> GetNumbersByDelim(std::string &line, char delim);
 int RoundUp(const int number);
+
+
+std::string GetInputPath(int day);

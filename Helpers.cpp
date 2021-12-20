@@ -2,6 +2,20 @@
 #include <fstream>
 #include <cmath>
 
+std::string GetInputPath(int day)
+{
+	bool test = false;
+	std::string path = "input\\day" + std::to_string(day);
+
+	if (test)
+	{
+		path += "test";
+	}
+	path += ".txt";
+
+	return path;
+}
+
 std::vector<std::string> ProcessInput(const std::string &inputpath)
 {
 	std::ifstream input;
